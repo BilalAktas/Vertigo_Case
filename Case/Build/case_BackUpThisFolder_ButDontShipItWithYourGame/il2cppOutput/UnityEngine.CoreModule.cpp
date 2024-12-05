@@ -5057,8 +5057,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool IntPtr_Equals_m0F39AB64A7BBD67190E745FF8
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool AnimationCurve_Internal_Equals_mEBA61732FE57654C4E3AF5B317918D1641E36050 (AnimationCurve_tCBFFAAD05CEBB35EF8D8631BD99914BE1A6BB354* __this, intptr_t ___other0, const RuntimeMethod* method) ;
 // System.Int32 System.IntPtr::GetHashCode()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t IntPtr_GetHashCode_m669B16AD7483C1C396E48F41D9CAC4B719E38F3D (intptr_t* __this, const RuntimeMethod* method) ;
-// System.Void UnityEngine.Application::Quit(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Application_Quit_m3F5A0BEC12A603F96B5C27D658C606B4B3196115 (int32_t ___exitCode0, const RuntimeMethod* method) ;
 // UnityEngine.RuntimePlatform UnityEngine.Application::get_platform()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Application_get_platform_m1AB34E71D9885B120F6021EB2B11DCB28CD6008D (const RuntimeMethod* method) ;
 // UnityEngine.DeviceType UnityEngine.SystemInfo::get_deviceType()
@@ -10042,23 +10040,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AnimationCurve_GetKey_Injected_mDE9640F5
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void UnityEngine.Application::Quit(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Application_Quit_m3F5A0BEC12A603F96B5C27D658C606B4B3196115 (int32_t ___exitCode0, const RuntimeMethod* method) 
-{
-	typedef void (*Application_Quit_m3F5A0BEC12A603F96B5C27D658C606B4B3196115_ftn) (int32_t);
-	static Application_Quit_m3F5A0BEC12A603F96B5C27D658C606B4B3196115_ftn _il2cpp_icall_func;
-	if (!_il2cpp_icall_func)
-	_il2cpp_icall_func = (Application_Quit_m3F5A0BEC12A603F96B5C27D658C606B4B3196115_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Application::Quit(System.Int32)");
-	_il2cpp_icall_func(___exitCode0);
-}
-// System.Void UnityEngine.Application::Quit()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Application_Quit_m965C6D4CA85A24DD95B347D22837074F19C58134 (const RuntimeMethod* method) 
-{
-	{
-		Application_Quit_m3F5A0BEC12A603F96B5C27D658C606B4B3196115(0, NULL);
-		return;
-	}
-}
 // System.Boolean UnityEngine.Application::get_isPlaying()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Application_get_isPlaying_m0B3B501E1093739F8887A0DAC5F61D9CB49CC337 (const RuntimeMethod* method) 
 {
@@ -33777,15 +33758,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Cursor_SetCursor_m04453993587B6E24034859
 		return;
 	}
 }
-// System.Void UnityEngine.Cursor::set_visible(System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Cursor_set_visible_mC2A804ADF7411AC885923A2E9F3108BCC85C1AE4 (bool ___value0, const RuntimeMethod* method) 
-{
-	typedef void (*Cursor_set_visible_mC2A804ADF7411AC885923A2E9F3108BCC85C1AE4_ftn) (bool);
-	static Cursor_set_visible_mC2A804ADF7411AC885923A2E9F3108BCC85C1AE4_ftn _il2cpp_icall_func;
-	if (!_il2cpp_icall_func)
-	_il2cpp_icall_func = (Cursor_set_visible_mC2A804ADF7411AC885923A2E9F3108BCC85C1AE4_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Cursor::set_visible(System.Boolean)");
-	_il2cpp_icall_func(___value0);
-}
 // UnityEngine.CursorLockMode UnityEngine.Cursor::get_lockState()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Cursor_get_lockState_m99E97A23A051AA1167B9C49C3F6E8244E74531AE (const RuntimeMethod* method) 
 {
@@ -33795,15 +33767,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Cursor_get_lockState_m99E97A23A051AA1
 	_il2cpp_icall_func = (Cursor_get_lockState_m99E97A23A051AA1167B9C49C3F6E8244E74531AE_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Cursor::get_lockState()");
 	int32_t icallRetVal = _il2cpp_icall_func();
 	return icallRetVal;
-}
-// System.Void UnityEngine.Cursor::set_lockState(UnityEngine.CursorLockMode)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Cursor_set_lockState_m5CA1C31AF58CE2CDFD4F6999B4F42C9D0DF8A99D (int32_t ___value0, const RuntimeMethod* method) 
-{
-	typedef void (*Cursor_set_lockState_m5CA1C31AF58CE2CDFD4F6999B4F42C9D0DF8A99D_ftn) (int32_t);
-	static Cursor_set_lockState_m5CA1C31AF58CE2CDFD4F6999B4F42C9D0DF8A99D_ftn _il2cpp_icall_func;
-	if (!_il2cpp_icall_func)
-	_il2cpp_icall_func = (Cursor_set_lockState_m5CA1C31AF58CE2CDFD4F6999B4F42C9D0DF8A99D_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Cursor::set_lockState(UnityEngine.CursorLockMode)");
-	_il2cpp_icall_func(___value0);
 }
 // System.Void UnityEngine.Cursor::SetCursor_Injected(UnityEngine.Texture2D,UnityEngine.Vector2&,UnityEngine.CursorMode)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Cursor_SetCursor_Injected_m8125D93C00203B82AB835E843DF4CCFE3D1B35DD (Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* ___texture0, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* ___hotspot1, int32_t ___cursorMode2, const RuntimeMethod* method) 

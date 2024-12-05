@@ -22,12 +22,12 @@ public class SpinManager : Singleton<SpinManager>, IPointerClickHandler
     
     [Header("Spin")]
     [SerializeField] private AnimationCurve durationCurve;
-    [SerializeField] private AnimationCurve durationCurveSecondPart;
+    //[SerializeField] private AnimationCurve durationCurveSecondPart;
     [SerializeField] private Transform spinWheel;
     [HideInInspector] public bool canSpin = true;
     
     private SlotItemForSpin currentSlotItem;
-    private bool changeDurationCurve;
+    //private bool changeDurationCurve;
     private const float SpinDuration = 5f;
     private const float InitialSpinAngle = -1080;
     
@@ -84,11 +84,11 @@ public class SpinManager : Singleton<SpinManager>, IPointerClickHandler
             {
                 absAngle = .7f;
 
-                if (!changeDurationCurve)
-                {
-                    changeDurationCurve = true;
-                    _curve = durationCurveSecondPart;
-                }
+                // if (!changeDurationCurve)
+                // {
+                //     changeDurationCurve = true;
+                //     _curve = durationCurveSecondPart;
+                // }
             }
 
             soundManager.AdjustSpinSoundPitch(absAngle);
@@ -116,7 +116,7 @@ public class SpinManager : Singleton<SpinManager>, IPointerClickHandler
     public void Set_OnAgain()
     {
         canSpin = true;
-        changeDurationCurve = false;
+        //changeDurationCurve = false;
         buttonManager.ResetSpinButton();
         buttonManager.SetSpinButtonColor(1f);
         

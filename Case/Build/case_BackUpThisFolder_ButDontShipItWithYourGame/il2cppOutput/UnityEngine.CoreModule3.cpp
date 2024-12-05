@@ -193,6 +193,7 @@ struct CreateOutputMethod_tD18AFE3B69E6DDD913D82D5FA1D5D909CEEC8509;
 IL2CPP_EXTERN_C RuntimeClass* ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* ArgumentOutOfRangeException_tEA2822DAF62B10EEED00E0E3A341D4BAF78CF85F_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* BuiltinRuntimeReflectionSystem_tB099BEB081659A8BC623562DA25A5F863846EEAE_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Convert_t7097FF336D592F7C06D88A98349A44646F91EFFC_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* GraphicsFormatU5BU5D_tF6A3D90C430FA3F548B77E5D58D25D71F154E6C5_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* GraphicsFormatUtility_t3DAD8CAC84EA38F28613F98184F871773CB282FD_il2cpp_TypeInfo_var;
@@ -213,6 +214,7 @@ IL2CPP_EXTERN_C RuntimeClass* RequestLightsDelegate_t585505A75681754DA53BE119D86
 IL2CPP_EXTERN_C RuntimeClass* ScriptableRuntimeReflectionSystemSettings_tC865DA64C8DC20410C83A10387A941F88C939AFF_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* ScriptableRuntimeReflectionSystemWrapper_t5E4ABCD6EBCCBC665EFFD6A654A6355D5744F924_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* ShaderTagId_t453E2085B5EE9448FF75E550CAB111EFF690ECB0_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* SupportedRenderingFeatures_t569A94D488395E4967F2CA349DB518EA7BD117A6_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CU3Ec_t480832E6E9C0D190B837CC90FB7A34286511D2E4_il2cpp_TypeInfo_var;
@@ -2358,6 +2360,74 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Nullable_1__ctor_mC09CE20B08C6A7188EE04F
 // Unity.Collections.NativeArray`1<T> Unity.Collections.LowLevel.Unsafe.NativeArrayUnsafeUtility::ConvertExistingDataToNativeArray<UnityEngine.Experimental.GlobalIllumination.LightDataGI>(System.Void*,System.Int32,Unity.Collections.Allocator)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR NativeArray_1_tDF6A1978B5813BF4DAD7948E398009FFC9BEA38D NativeArrayUnsafeUtility_ConvertExistingDataToNativeArray_TisLightDataGI_t47D2197E863C0DDA40C2182FBF0A21367E468E21_mA670EEAF3374E154A82DDB43174DA27B4136CB59_gshared (void* ___dataPointer0, int32_t ___length1, int32_t ___allocator2, const RuntimeMethod* method) ;
 
+// System.Void UnityEngine.Rendering.StencilState::.ctor(System.Boolean,System.Byte,System.Byte,UnityEngine.Rendering.CompareFunction,UnityEngine.Rendering.StencilOp,UnityEngine.Rendering.StencilOp,UnityEngine.Rendering.StencilOp)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StencilState__ctor_mEC62013478099EA25296DED1A78EC7412EC106E6 (StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* __this, bool ___enabled0, uint8_t ___readMask1, uint8_t ___writeMask2, int32_t ___compareFunction3, int32_t ___passOperation4, int32_t ___failOperation5, int32_t ___zFailOperation6, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Rendering.StencilState::.ctor(System.Boolean,System.Byte,System.Byte,UnityEngine.Rendering.CompareFunction,UnityEngine.Rendering.StencilOp,UnityEngine.Rendering.StencilOp,UnityEngine.Rendering.StencilOp,UnityEngine.Rendering.CompareFunction,UnityEngine.Rendering.StencilOp,UnityEngine.Rendering.StencilOp,UnityEngine.Rendering.StencilOp)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StencilState__ctor_mDE204DCDD73203CC81E2FEE8F142834449C8B56E (StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* __this, bool ___enabled0, uint8_t ___readMask1, uint8_t ___writeMask2, int32_t ___compareFunctionFront3, int32_t ___passOperationFront4, int32_t ___failOperationFront5, int32_t ___zFailOperationFront6, int32_t ___compareFunctionBack7, int32_t ___passOperationBack8, int32_t ___failOperationBack9, int32_t ___zFailOperationBack10, const RuntimeMethod* method) ;
+// System.Byte System.Convert::ToByte(System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint8_t Convert_ToByte_mF977257DBAD4FAD9FF78232B33DF37121800834D (bool ___value0, const RuntimeMethod* method) ;
+// System.Boolean System.Convert::ToBoolean(System.Byte)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Convert_ToBoolean_m15C298BDE61E3537C216A843315CD45862704BBD (uint8_t ___value0, const RuntimeMethod* method) ;
+// System.Boolean UnityEngine.Rendering.StencilState::get_enabled()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool StencilState_get_enabled_m03D0635E12B6B461F459A872E3B992C09AD2F709 (StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* __this, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Rendering.StencilState::set_enabled(System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StencilState_set_enabled_m6DC861C699D1044E896E833D2DAE69B82F796564 (StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* __this, bool ___value0, const RuntimeMethod* method) ;
+// System.Byte UnityEngine.Rendering.StencilState::get_readMask()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint8_t StencilState_get_readMask_mFDA345D54433A4EDA6232002B4F7004656BBD0CB (StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* __this, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Rendering.StencilState::set_readMask(System.Byte)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StencilState_set_readMask_m1BA8F9033413889D4E77DA343DC0029566A9BB9B (StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* __this, uint8_t ___value0, const RuntimeMethod* method) ;
+// System.Byte UnityEngine.Rendering.StencilState::get_writeMask()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint8_t StencilState_get_writeMask_mDE1345017B389C91E696FCB708700C78703734A0 (StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* __this, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Rendering.StencilState::set_writeMask(System.Byte)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StencilState_set_writeMask_m94471C671E03D42F36DA61436B1068B362375D65 (StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* __this, uint8_t ___value0, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Rendering.StencilState::set_compareFunctionFront(UnityEngine.Rendering.CompareFunction)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StencilState_set_compareFunctionFront_m1388C37901DAB6AF9D23C0F01946DCCE19BC9BFC (StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* __this, int32_t ___value0, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Rendering.StencilState::set_compareFunctionBack(UnityEngine.Rendering.CompareFunction)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StencilState_set_compareFunctionBack_m8AF73F4E8FC95A46D33E3192C50702D2AA15D61D (StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* __this, int32_t ___value0, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Rendering.StencilState::SetCompareFunction(UnityEngine.Rendering.CompareFunction)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StencilState_SetCompareFunction_m4F46E4197FDEBB0643BB1D529DB33CA3590D7E29 (StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* __this, int32_t ___value0, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Rendering.StencilState::set_passOperationFront(UnityEngine.Rendering.StencilOp)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StencilState_set_passOperationFront_m1F15CC29366DAEAA6CCE1DB0622C70D6ECC5A3EB (StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* __this, int32_t ___value0, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Rendering.StencilState::set_passOperationBack(UnityEngine.Rendering.StencilOp)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StencilState_set_passOperationBack_m4B1395FE21F5B5C809DC6F31D5824A90E05ED220 (StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* __this, int32_t ___value0, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Rendering.StencilState::SetPassOperation(UnityEngine.Rendering.StencilOp)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StencilState_SetPassOperation_m8DF4167E4EC16BDEA8DB8CAD4F5161094B8FD7CB (StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* __this, int32_t ___value0, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Rendering.StencilState::set_failOperationFront(UnityEngine.Rendering.StencilOp)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StencilState_set_failOperationFront_mADCECAE5D2E75ABAE51650F1F314E661D09C2CD6 (StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* __this, int32_t ___value0, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Rendering.StencilState::set_failOperationBack(UnityEngine.Rendering.StencilOp)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StencilState_set_failOperationBack_mD279271DD1F99EE5B8BC19F5AE60988E6C6F0E4A (StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* __this, int32_t ___value0, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Rendering.StencilState::SetFailOperation(UnityEngine.Rendering.StencilOp)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StencilState_SetFailOperation_mC5BFB2CA88EFDEF6E302C1EA70471DFAFD9F19C9 (StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* __this, int32_t ___value0, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Rendering.StencilState::set_zFailOperationFront(UnityEngine.Rendering.StencilOp)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StencilState_set_zFailOperationFront_mC7D8F0A08B9AEC4203BD6B352CB795E8011EFBB6 (StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* __this, int32_t ___value0, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Rendering.StencilState::set_zFailOperationBack(UnityEngine.Rendering.StencilOp)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StencilState_set_zFailOperationBack_mC092ABD8A5EA87245640A10E54C6A1990C4F6864 (StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* __this, int32_t ___value0, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Rendering.StencilState::SetZFailOperation(UnityEngine.Rendering.StencilOp)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StencilState_SetZFailOperation_m1E6D4F210E0039A6E44F9550FEC8D4155F540DF2 (StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* __this, int32_t ___value0, const RuntimeMethod* method) ;
+// UnityEngine.Rendering.CompareFunction UnityEngine.Rendering.StencilState::get_compareFunctionFront()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t StencilState_get_compareFunctionFront_mBEF97C76C814AA7072B0D8C6E90E5699EFA48DC6 (StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* __this, const RuntimeMethod* method) ;
+// UnityEngine.Rendering.StencilOp UnityEngine.Rendering.StencilState::get_passOperationFront()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t StencilState_get_passOperationFront_mED3B1DD6437336A94A319DB2963C5EA4641C753F (StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* __this, const RuntimeMethod* method) ;
+// UnityEngine.Rendering.StencilOp UnityEngine.Rendering.StencilState::get_failOperationFront()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t StencilState_get_failOperationFront_mAC199B756771167AA6FB068883D47FDEA2B2DBC5 (StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* __this, const RuntimeMethod* method) ;
+// UnityEngine.Rendering.StencilOp UnityEngine.Rendering.StencilState::get_zFailOperationFront()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t StencilState_get_zFailOperationFront_m5E7C2ADCFA97B8E0A3387D2075C01D6F5385067C (StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* __this, const RuntimeMethod* method) ;
+// UnityEngine.Rendering.CompareFunction UnityEngine.Rendering.StencilState::get_compareFunctionBack()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t StencilState_get_compareFunctionBack_m37AC5689D94A1719BEB75CC577096D271750A9C5 (StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* __this, const RuntimeMethod* method) ;
+// UnityEngine.Rendering.StencilOp UnityEngine.Rendering.StencilState::get_passOperationBack()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t StencilState_get_passOperationBack_m3C6BAA44C73AE8FFC2C39BE1B3980498A28A6C38 (StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* __this, const RuntimeMethod* method) ;
+// UnityEngine.Rendering.StencilOp UnityEngine.Rendering.StencilState::get_failOperationBack()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t StencilState_get_failOperationBack_m5310F3D9B99EA2D8E1DDDAC651EBF6E12A630BDE (StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* __this, const RuntimeMethod* method) ;
+// UnityEngine.Rendering.StencilOp UnityEngine.Rendering.StencilState::get_zFailOperationBack()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t StencilState_get_zFailOperationBack_m4569E6652B75DE77E582DA00FD92291ECC1EBABC (StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* __this, const RuntimeMethod* method) ;
+// System.Boolean UnityEngine.Rendering.StencilState::Equals(UnityEngine.Rendering.StencilState)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool StencilState_Equals_m9FFB8A41D8838FD128875CB2D4DAA760C6DF1051 (StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* __this, StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9 ___other0, const RuntimeMethod* method) ;
+// System.Boolean UnityEngine.Rendering.StencilState::Equals(System.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool StencilState_Equals_mEA45A5D2BF2223B15EE0FB8BCEDBA9CB534ADF4B (StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* __this, RuntimeObject* ___obj0, const RuntimeMethod* method) ;
+// System.Int32 System.Byte::GetHashCode()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Byte_GetHashCode_mB42A844E310593D124CE92EBA90F3755C9B10678 (uint8_t* __this, const RuntimeMethod* method) ;
+// System.Int32 UnityEngine.Rendering.StencilState::GetHashCode()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t StencilState_GetHashCode_mB4A02DEE780377C853D16FFF49CCB9D9F4F711A5 (StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* __this, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Rendering.SupportedRenderingFeatures::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SupportedRenderingFeatures__ctor_mF7728980F81142B7BD45FBB25AB001B17A4BF0ED (SupportedRenderingFeatures_t569A94D488395E4967F2CA349DB518EA7BD117A6* __this, const RuntimeMethod* method) ;
 // System.Void* System.IntPtr::op_Explicit(System.IntPtr)
@@ -2746,6 +2816,923 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Mathf_GammaToLinearSpace_m4D758883DC927
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Max_mA9DCA91E87D6D27034F56ABA52606A9090406016_inline (float ___a0, float ___b1, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Vector4::.ctor(System.Single,System.Single,System.Single,System.Single)
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector4__ctor_m96B2CD8B862B271F513AF0BDC2EABD58E4DBC813_inline (Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3* __this, float ___x0, float ___y1, float ___z2, float ___w3, const RuntimeMethod* method) ;
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// UnityEngine.Rendering.StencilState UnityEngine.Rendering.StencilState::get_defaultValue()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9 StencilState_get_defaultValue_m630677923DEFFC0B9E60383DDFF5AE984791BA1C (const RuntimeMethod* method) 
+{
+	StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9 L_0;
+		memset((&L_0), 0, sizeof(L_0));
+		StencilState__ctor_mEC62013478099EA25296DED1A78EC7412EC106E6((&L_0), (bool)1, (uint8_t)((int32_t)255), (uint8_t)((int32_t)255), 8, 0, 0, 0, /*hidden argument*/NULL);
+		V_0 = L_0;
+		goto IL_0018;
+	}
+
+IL_0018:
+	{
+		StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9 L_1 = V_0;
+		return L_1;
+	}
+}
+// System.Void UnityEngine.Rendering.StencilState::.ctor(System.Boolean,System.Byte,System.Byte,UnityEngine.Rendering.CompareFunction,UnityEngine.Rendering.StencilOp,UnityEngine.Rendering.StencilOp,UnityEngine.Rendering.StencilOp)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StencilState__ctor_mEC62013478099EA25296DED1A78EC7412EC106E6 (StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* __this, bool ___enabled0, uint8_t ___readMask1, uint8_t ___writeMask2, int32_t ___compareFunction3, int32_t ___passOperation4, int32_t ___failOperation5, int32_t ___zFailOperation6, const RuntimeMethod* method) 
+{
+	{
+		bool L_0 = ___enabled0;
+		uint8_t L_1 = ___readMask1;
+		uint8_t L_2 = ___writeMask2;
+		int32_t L_3 = ___compareFunction3;
+		int32_t L_4 = ___passOperation4;
+		int32_t L_5 = ___failOperation5;
+		int32_t L_6 = ___zFailOperation6;
+		int32_t L_7 = ___compareFunction3;
+		int32_t L_8 = ___passOperation4;
+		int32_t L_9 = ___failOperation5;
+		int32_t L_10 = ___zFailOperation6;
+		StencilState__ctor_mDE204DCDD73203CC81E2FEE8F142834449C8B56E(__this, L_0, L_1, L_2, L_3, L_4, L_5, L_6, L_7, L_8, L_9, L_10, NULL);
+		return;
+	}
+}
+IL2CPP_EXTERN_C  void StencilState__ctor_mEC62013478099EA25296DED1A78EC7412EC106E6_AdjustorThunk (RuntimeObject* __this, bool ___enabled0, uint8_t ___readMask1, uint8_t ___writeMask2, int32_t ___compareFunction3, int32_t ___passOperation4, int32_t ___failOperation5, int32_t ___zFailOperation6, const RuntimeMethod* method)
+{
+	StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9*>(__this + _offset);
+	StencilState__ctor_mEC62013478099EA25296DED1A78EC7412EC106E6(_thisAdjusted, ___enabled0, ___readMask1, ___writeMask2, ___compareFunction3, ___passOperation4, ___failOperation5, ___zFailOperation6, method);
+}
+// System.Void UnityEngine.Rendering.StencilState::.ctor(System.Boolean,System.Byte,System.Byte,UnityEngine.Rendering.CompareFunction,UnityEngine.Rendering.StencilOp,UnityEngine.Rendering.StencilOp,UnityEngine.Rendering.StencilOp,UnityEngine.Rendering.CompareFunction,UnityEngine.Rendering.StencilOp,UnityEngine.Rendering.StencilOp,UnityEngine.Rendering.StencilOp)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StencilState__ctor_mDE204DCDD73203CC81E2FEE8F142834449C8B56E (StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* __this, bool ___enabled0, uint8_t ___readMask1, uint8_t ___writeMask2, int32_t ___compareFunctionFront3, int32_t ___passOperationFront4, int32_t ___failOperationFront5, int32_t ___zFailOperationFront6, int32_t ___compareFunctionBack7, int32_t ___passOperationBack8, int32_t ___failOperationBack9, int32_t ___zFailOperationBack10, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Convert_t7097FF336D592F7C06D88A98349A44646F91EFFC_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		bool L_0 = ___enabled0;
+		il2cpp_codegen_runtime_class_init_inline(Convert_t7097FF336D592F7C06D88A98349A44646F91EFFC_il2cpp_TypeInfo_var);
+		uint8_t L_1;
+		L_1 = Convert_ToByte_mF977257DBAD4FAD9FF78232B33DF37121800834D(L_0, NULL);
+		__this->___m_Enabled_0 = L_1;
+		uint8_t L_2 = ___readMask1;
+		__this->___m_ReadMask_1 = L_2;
+		uint8_t L_3 = ___writeMask2;
+		__this->___m_WriteMask_2 = L_3;
+		__this->___m_Padding_3 = (uint8_t)0;
+		int32_t L_4 = ___compareFunctionFront3;
+		__this->___m_CompareFunctionFront_4 = (uint8_t)((int32_t)(uint8_t)L_4);
+		int32_t L_5 = ___passOperationFront4;
+		__this->___m_PassOperationFront_5 = (uint8_t)((int32_t)(uint8_t)L_5);
+		int32_t L_6 = ___failOperationFront5;
+		__this->___m_FailOperationFront_6 = (uint8_t)((int32_t)(uint8_t)L_6);
+		int32_t L_7 = ___zFailOperationFront6;
+		__this->___m_ZFailOperationFront_7 = (uint8_t)((int32_t)(uint8_t)L_7);
+		int32_t L_8 = ___compareFunctionBack7;
+		__this->___m_CompareFunctionBack_8 = (uint8_t)((int32_t)(uint8_t)L_8);
+		int32_t L_9 = ___passOperationBack8;
+		__this->___m_PassOperationBack_9 = (uint8_t)((int32_t)(uint8_t)L_9);
+		int32_t L_10 = ___failOperationBack9;
+		__this->___m_FailOperationBack_10 = (uint8_t)((int32_t)(uint8_t)L_10);
+		int32_t L_11 = ___zFailOperationBack10;
+		__this->___m_ZFailOperationBack_11 = (uint8_t)((int32_t)(uint8_t)L_11);
+		return;
+	}
+}
+IL2CPP_EXTERN_C  void StencilState__ctor_mDE204DCDD73203CC81E2FEE8F142834449C8B56E_AdjustorThunk (RuntimeObject* __this, bool ___enabled0, uint8_t ___readMask1, uint8_t ___writeMask2, int32_t ___compareFunctionFront3, int32_t ___passOperationFront4, int32_t ___failOperationFront5, int32_t ___zFailOperationFront6, int32_t ___compareFunctionBack7, int32_t ___passOperationBack8, int32_t ___failOperationBack9, int32_t ___zFailOperationBack10, const RuntimeMethod* method)
+{
+	StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9*>(__this + _offset);
+	StencilState__ctor_mDE204DCDD73203CC81E2FEE8F142834449C8B56E(_thisAdjusted, ___enabled0, ___readMask1, ___writeMask2, ___compareFunctionFront3, ___passOperationFront4, ___failOperationFront5, ___zFailOperationFront6, ___compareFunctionBack7, ___passOperationBack8, ___failOperationBack9, ___zFailOperationBack10, method);
+}
+// System.Boolean UnityEngine.Rendering.StencilState::get_enabled()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool StencilState_get_enabled_m03D0635E12B6B461F459A872E3B992C09AD2F709 (StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Convert_t7097FF336D592F7C06D88A98349A44646F91EFFC_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	bool V_0 = false;
+	{
+		uint8_t L_0 = __this->___m_Enabled_0;
+		il2cpp_codegen_runtime_class_init_inline(Convert_t7097FF336D592F7C06D88A98349A44646F91EFFC_il2cpp_TypeInfo_var);
+		bool L_1;
+		L_1 = Convert_ToBoolean_m15C298BDE61E3537C216A843315CD45862704BBD(L_0, NULL);
+		V_0 = L_1;
+		goto IL_000f;
+	}
+
+IL_000f:
+	{
+		bool L_2 = V_0;
+		return L_2;
+	}
+}
+IL2CPP_EXTERN_C  bool StencilState_get_enabled_m03D0635E12B6B461F459A872E3B992C09AD2F709_AdjustorThunk (RuntimeObject* __this, const RuntimeMethod* method)
+{
+	StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9*>(__this + _offset);
+	bool _returnValue;
+	_returnValue = StencilState_get_enabled_m03D0635E12B6B461F459A872E3B992C09AD2F709(_thisAdjusted, method);
+	return _returnValue;
+}
+// System.Void UnityEngine.Rendering.StencilState::set_enabled(System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StencilState_set_enabled_m6DC861C699D1044E896E833D2DAE69B82F796564 (StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* __this, bool ___value0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Convert_t7097FF336D592F7C06D88A98349A44646F91EFFC_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		bool L_0 = ___value0;
+		il2cpp_codegen_runtime_class_init_inline(Convert_t7097FF336D592F7C06D88A98349A44646F91EFFC_il2cpp_TypeInfo_var);
+		uint8_t L_1;
+		L_1 = Convert_ToByte_mF977257DBAD4FAD9FF78232B33DF37121800834D(L_0, NULL);
+		__this->___m_Enabled_0 = L_1;
+		return;
+	}
+}
+IL2CPP_EXTERN_C  void StencilState_set_enabled_m6DC861C699D1044E896E833D2DAE69B82F796564_AdjustorThunk (RuntimeObject* __this, bool ___value0, const RuntimeMethod* method)
+{
+	StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9*>(__this + _offset);
+	StencilState_set_enabled_m6DC861C699D1044E896E833D2DAE69B82F796564(_thisAdjusted, ___value0, method);
+}
+// System.Byte UnityEngine.Rendering.StencilState::get_readMask()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint8_t StencilState_get_readMask_mFDA345D54433A4EDA6232002B4F7004656BBD0CB (StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* __this, const RuntimeMethod* method) 
+{
+	uint8_t V_0 = 0x0;
+	{
+		uint8_t L_0 = __this->___m_ReadMask_1;
+		V_0 = L_0;
+		goto IL_000a;
+	}
+
+IL_000a:
+	{
+		uint8_t L_1 = V_0;
+		return L_1;
+	}
+}
+IL2CPP_EXTERN_C  uint8_t StencilState_get_readMask_mFDA345D54433A4EDA6232002B4F7004656BBD0CB_AdjustorThunk (RuntimeObject* __this, const RuntimeMethod* method)
+{
+	StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9*>(__this + _offset);
+	uint8_t _returnValue;
+	_returnValue = StencilState_get_readMask_mFDA345D54433A4EDA6232002B4F7004656BBD0CB(_thisAdjusted, method);
+	return _returnValue;
+}
+// System.Void UnityEngine.Rendering.StencilState::set_readMask(System.Byte)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StencilState_set_readMask_m1BA8F9033413889D4E77DA343DC0029566A9BB9B (StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* __this, uint8_t ___value0, const RuntimeMethod* method) 
+{
+	{
+		uint8_t L_0 = ___value0;
+		__this->___m_ReadMask_1 = L_0;
+		return;
+	}
+}
+IL2CPP_EXTERN_C  void StencilState_set_readMask_m1BA8F9033413889D4E77DA343DC0029566A9BB9B_AdjustorThunk (RuntimeObject* __this, uint8_t ___value0, const RuntimeMethod* method)
+{
+	StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9*>(__this + _offset);
+	StencilState_set_readMask_m1BA8F9033413889D4E77DA343DC0029566A9BB9B(_thisAdjusted, ___value0, method);
+}
+// System.Byte UnityEngine.Rendering.StencilState::get_writeMask()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint8_t StencilState_get_writeMask_mDE1345017B389C91E696FCB708700C78703734A0 (StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* __this, const RuntimeMethod* method) 
+{
+	uint8_t V_0 = 0x0;
+	{
+		uint8_t L_0 = __this->___m_WriteMask_2;
+		V_0 = L_0;
+		goto IL_000a;
+	}
+
+IL_000a:
+	{
+		uint8_t L_1 = V_0;
+		return L_1;
+	}
+}
+IL2CPP_EXTERN_C  uint8_t StencilState_get_writeMask_mDE1345017B389C91E696FCB708700C78703734A0_AdjustorThunk (RuntimeObject* __this, const RuntimeMethod* method)
+{
+	StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9*>(__this + _offset);
+	uint8_t _returnValue;
+	_returnValue = StencilState_get_writeMask_mDE1345017B389C91E696FCB708700C78703734A0(_thisAdjusted, method);
+	return _returnValue;
+}
+// System.Void UnityEngine.Rendering.StencilState::set_writeMask(System.Byte)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StencilState_set_writeMask_m94471C671E03D42F36DA61436B1068B362375D65 (StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* __this, uint8_t ___value0, const RuntimeMethod* method) 
+{
+	{
+		uint8_t L_0 = ___value0;
+		__this->___m_WriteMask_2 = L_0;
+		return;
+	}
+}
+IL2CPP_EXTERN_C  void StencilState_set_writeMask_m94471C671E03D42F36DA61436B1068B362375D65_AdjustorThunk (RuntimeObject* __this, uint8_t ___value0, const RuntimeMethod* method)
+{
+	StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9*>(__this + _offset);
+	StencilState_set_writeMask_m94471C671E03D42F36DA61436B1068B362375D65(_thisAdjusted, ___value0, method);
+}
+// System.Void UnityEngine.Rendering.StencilState::SetCompareFunction(UnityEngine.Rendering.CompareFunction)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StencilState_SetCompareFunction_m4F46E4197FDEBB0643BB1D529DB33CA3590D7E29 (StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* __this, int32_t ___value0, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0 = ___value0;
+		StencilState_set_compareFunctionFront_m1388C37901DAB6AF9D23C0F01946DCCE19BC9BFC(__this, L_0, NULL);
+		int32_t L_1 = ___value0;
+		StencilState_set_compareFunctionBack_m8AF73F4E8FC95A46D33E3192C50702D2AA15D61D(__this, L_1, NULL);
+		return;
+	}
+}
+IL2CPP_EXTERN_C  void StencilState_SetCompareFunction_m4F46E4197FDEBB0643BB1D529DB33CA3590D7E29_AdjustorThunk (RuntimeObject* __this, int32_t ___value0, const RuntimeMethod* method)
+{
+	StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9*>(__this + _offset);
+	StencilState_SetCompareFunction_m4F46E4197FDEBB0643BB1D529DB33CA3590D7E29(_thisAdjusted, ___value0, method);
+}
+// System.Void UnityEngine.Rendering.StencilState::SetPassOperation(UnityEngine.Rendering.StencilOp)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StencilState_SetPassOperation_m8DF4167E4EC16BDEA8DB8CAD4F5161094B8FD7CB (StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* __this, int32_t ___value0, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0 = ___value0;
+		StencilState_set_passOperationFront_m1F15CC29366DAEAA6CCE1DB0622C70D6ECC5A3EB(__this, L_0, NULL);
+		int32_t L_1 = ___value0;
+		StencilState_set_passOperationBack_m4B1395FE21F5B5C809DC6F31D5824A90E05ED220(__this, L_1, NULL);
+		return;
+	}
+}
+IL2CPP_EXTERN_C  void StencilState_SetPassOperation_m8DF4167E4EC16BDEA8DB8CAD4F5161094B8FD7CB_AdjustorThunk (RuntimeObject* __this, int32_t ___value0, const RuntimeMethod* method)
+{
+	StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9*>(__this + _offset);
+	StencilState_SetPassOperation_m8DF4167E4EC16BDEA8DB8CAD4F5161094B8FD7CB(_thisAdjusted, ___value0, method);
+}
+// System.Void UnityEngine.Rendering.StencilState::SetFailOperation(UnityEngine.Rendering.StencilOp)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StencilState_SetFailOperation_mC5BFB2CA88EFDEF6E302C1EA70471DFAFD9F19C9 (StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* __this, int32_t ___value0, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0 = ___value0;
+		StencilState_set_failOperationFront_mADCECAE5D2E75ABAE51650F1F314E661D09C2CD6(__this, L_0, NULL);
+		int32_t L_1 = ___value0;
+		StencilState_set_failOperationBack_mD279271DD1F99EE5B8BC19F5AE60988E6C6F0E4A(__this, L_1, NULL);
+		return;
+	}
+}
+IL2CPP_EXTERN_C  void StencilState_SetFailOperation_mC5BFB2CA88EFDEF6E302C1EA70471DFAFD9F19C9_AdjustorThunk (RuntimeObject* __this, int32_t ___value0, const RuntimeMethod* method)
+{
+	StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9*>(__this + _offset);
+	StencilState_SetFailOperation_mC5BFB2CA88EFDEF6E302C1EA70471DFAFD9F19C9(_thisAdjusted, ___value0, method);
+}
+// System.Void UnityEngine.Rendering.StencilState::SetZFailOperation(UnityEngine.Rendering.StencilOp)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StencilState_SetZFailOperation_m1E6D4F210E0039A6E44F9550FEC8D4155F540DF2 (StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* __this, int32_t ___value0, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0 = ___value0;
+		StencilState_set_zFailOperationFront_mC7D8F0A08B9AEC4203BD6B352CB795E8011EFBB6(__this, L_0, NULL);
+		int32_t L_1 = ___value0;
+		StencilState_set_zFailOperationBack_mC092ABD8A5EA87245640A10E54C6A1990C4F6864(__this, L_1, NULL);
+		return;
+	}
+}
+IL2CPP_EXTERN_C  void StencilState_SetZFailOperation_m1E6D4F210E0039A6E44F9550FEC8D4155F540DF2_AdjustorThunk (RuntimeObject* __this, int32_t ___value0, const RuntimeMethod* method)
+{
+	StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9*>(__this + _offset);
+	StencilState_SetZFailOperation_m1E6D4F210E0039A6E44F9550FEC8D4155F540DF2(_thisAdjusted, ___value0, method);
+}
+// UnityEngine.Rendering.CompareFunction UnityEngine.Rendering.StencilState::get_compareFunctionFront()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t StencilState_get_compareFunctionFront_mBEF97C76C814AA7072B0D8C6E90E5699EFA48DC6 (StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* __this, const RuntimeMethod* method) 
+{
+	int32_t V_0 = 0;
+	{
+		uint8_t L_0 = __this->___m_CompareFunctionFront_4;
+		V_0 = L_0;
+		goto IL_000a;
+	}
+
+IL_000a:
+	{
+		int32_t L_1 = V_0;
+		return L_1;
+	}
+}
+IL2CPP_EXTERN_C  int32_t StencilState_get_compareFunctionFront_mBEF97C76C814AA7072B0D8C6E90E5699EFA48DC6_AdjustorThunk (RuntimeObject* __this, const RuntimeMethod* method)
+{
+	StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9*>(__this + _offset);
+	int32_t _returnValue;
+	_returnValue = StencilState_get_compareFunctionFront_mBEF97C76C814AA7072B0D8C6E90E5699EFA48DC6(_thisAdjusted, method);
+	return _returnValue;
+}
+// System.Void UnityEngine.Rendering.StencilState::set_compareFunctionFront(UnityEngine.Rendering.CompareFunction)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StencilState_set_compareFunctionFront_m1388C37901DAB6AF9D23C0F01946DCCE19BC9BFC (StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* __this, int32_t ___value0, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0 = ___value0;
+		__this->___m_CompareFunctionFront_4 = (uint8_t)((int32_t)(uint8_t)L_0);
+		return;
+	}
+}
+IL2CPP_EXTERN_C  void StencilState_set_compareFunctionFront_m1388C37901DAB6AF9D23C0F01946DCCE19BC9BFC_AdjustorThunk (RuntimeObject* __this, int32_t ___value0, const RuntimeMethod* method)
+{
+	StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9*>(__this + _offset);
+	StencilState_set_compareFunctionFront_m1388C37901DAB6AF9D23C0F01946DCCE19BC9BFC(_thisAdjusted, ___value0, method);
+}
+// UnityEngine.Rendering.StencilOp UnityEngine.Rendering.StencilState::get_passOperationFront()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t StencilState_get_passOperationFront_mED3B1DD6437336A94A319DB2963C5EA4641C753F (StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* __this, const RuntimeMethod* method) 
+{
+	int32_t V_0 = 0;
+	{
+		uint8_t L_0 = __this->___m_PassOperationFront_5;
+		V_0 = L_0;
+		goto IL_000a;
+	}
+
+IL_000a:
+	{
+		int32_t L_1 = V_0;
+		return L_1;
+	}
+}
+IL2CPP_EXTERN_C  int32_t StencilState_get_passOperationFront_mED3B1DD6437336A94A319DB2963C5EA4641C753F_AdjustorThunk (RuntimeObject* __this, const RuntimeMethod* method)
+{
+	StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9*>(__this + _offset);
+	int32_t _returnValue;
+	_returnValue = StencilState_get_passOperationFront_mED3B1DD6437336A94A319DB2963C5EA4641C753F(_thisAdjusted, method);
+	return _returnValue;
+}
+// System.Void UnityEngine.Rendering.StencilState::set_passOperationFront(UnityEngine.Rendering.StencilOp)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StencilState_set_passOperationFront_m1F15CC29366DAEAA6CCE1DB0622C70D6ECC5A3EB (StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* __this, int32_t ___value0, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0 = ___value0;
+		__this->___m_PassOperationFront_5 = (uint8_t)((int32_t)(uint8_t)L_0);
+		return;
+	}
+}
+IL2CPP_EXTERN_C  void StencilState_set_passOperationFront_m1F15CC29366DAEAA6CCE1DB0622C70D6ECC5A3EB_AdjustorThunk (RuntimeObject* __this, int32_t ___value0, const RuntimeMethod* method)
+{
+	StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9*>(__this + _offset);
+	StencilState_set_passOperationFront_m1F15CC29366DAEAA6CCE1DB0622C70D6ECC5A3EB(_thisAdjusted, ___value0, method);
+}
+// UnityEngine.Rendering.StencilOp UnityEngine.Rendering.StencilState::get_failOperationFront()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t StencilState_get_failOperationFront_mAC199B756771167AA6FB068883D47FDEA2B2DBC5 (StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* __this, const RuntimeMethod* method) 
+{
+	int32_t V_0 = 0;
+	{
+		uint8_t L_0 = __this->___m_FailOperationFront_6;
+		V_0 = L_0;
+		goto IL_000a;
+	}
+
+IL_000a:
+	{
+		int32_t L_1 = V_0;
+		return L_1;
+	}
+}
+IL2CPP_EXTERN_C  int32_t StencilState_get_failOperationFront_mAC199B756771167AA6FB068883D47FDEA2B2DBC5_AdjustorThunk (RuntimeObject* __this, const RuntimeMethod* method)
+{
+	StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9*>(__this + _offset);
+	int32_t _returnValue;
+	_returnValue = StencilState_get_failOperationFront_mAC199B756771167AA6FB068883D47FDEA2B2DBC5(_thisAdjusted, method);
+	return _returnValue;
+}
+// System.Void UnityEngine.Rendering.StencilState::set_failOperationFront(UnityEngine.Rendering.StencilOp)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StencilState_set_failOperationFront_mADCECAE5D2E75ABAE51650F1F314E661D09C2CD6 (StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* __this, int32_t ___value0, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0 = ___value0;
+		__this->___m_FailOperationFront_6 = (uint8_t)((int32_t)(uint8_t)L_0);
+		return;
+	}
+}
+IL2CPP_EXTERN_C  void StencilState_set_failOperationFront_mADCECAE5D2E75ABAE51650F1F314E661D09C2CD6_AdjustorThunk (RuntimeObject* __this, int32_t ___value0, const RuntimeMethod* method)
+{
+	StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9*>(__this + _offset);
+	StencilState_set_failOperationFront_mADCECAE5D2E75ABAE51650F1F314E661D09C2CD6(_thisAdjusted, ___value0, method);
+}
+// UnityEngine.Rendering.StencilOp UnityEngine.Rendering.StencilState::get_zFailOperationFront()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t StencilState_get_zFailOperationFront_m5E7C2ADCFA97B8E0A3387D2075C01D6F5385067C (StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* __this, const RuntimeMethod* method) 
+{
+	int32_t V_0 = 0;
+	{
+		uint8_t L_0 = __this->___m_ZFailOperationFront_7;
+		V_0 = L_0;
+		goto IL_000a;
+	}
+
+IL_000a:
+	{
+		int32_t L_1 = V_0;
+		return L_1;
+	}
+}
+IL2CPP_EXTERN_C  int32_t StencilState_get_zFailOperationFront_m5E7C2ADCFA97B8E0A3387D2075C01D6F5385067C_AdjustorThunk (RuntimeObject* __this, const RuntimeMethod* method)
+{
+	StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9*>(__this + _offset);
+	int32_t _returnValue;
+	_returnValue = StencilState_get_zFailOperationFront_m5E7C2ADCFA97B8E0A3387D2075C01D6F5385067C(_thisAdjusted, method);
+	return _returnValue;
+}
+// System.Void UnityEngine.Rendering.StencilState::set_zFailOperationFront(UnityEngine.Rendering.StencilOp)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StencilState_set_zFailOperationFront_mC7D8F0A08B9AEC4203BD6B352CB795E8011EFBB6 (StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* __this, int32_t ___value0, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0 = ___value0;
+		__this->___m_ZFailOperationFront_7 = (uint8_t)((int32_t)(uint8_t)L_0);
+		return;
+	}
+}
+IL2CPP_EXTERN_C  void StencilState_set_zFailOperationFront_mC7D8F0A08B9AEC4203BD6B352CB795E8011EFBB6_AdjustorThunk (RuntimeObject* __this, int32_t ___value0, const RuntimeMethod* method)
+{
+	StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9*>(__this + _offset);
+	StencilState_set_zFailOperationFront_mC7D8F0A08B9AEC4203BD6B352CB795E8011EFBB6(_thisAdjusted, ___value0, method);
+}
+// UnityEngine.Rendering.CompareFunction UnityEngine.Rendering.StencilState::get_compareFunctionBack()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t StencilState_get_compareFunctionBack_m37AC5689D94A1719BEB75CC577096D271750A9C5 (StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* __this, const RuntimeMethod* method) 
+{
+	int32_t V_0 = 0;
+	{
+		uint8_t L_0 = __this->___m_CompareFunctionBack_8;
+		V_0 = L_0;
+		goto IL_000a;
+	}
+
+IL_000a:
+	{
+		int32_t L_1 = V_0;
+		return L_1;
+	}
+}
+IL2CPP_EXTERN_C  int32_t StencilState_get_compareFunctionBack_m37AC5689D94A1719BEB75CC577096D271750A9C5_AdjustorThunk (RuntimeObject* __this, const RuntimeMethod* method)
+{
+	StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9*>(__this + _offset);
+	int32_t _returnValue;
+	_returnValue = StencilState_get_compareFunctionBack_m37AC5689D94A1719BEB75CC577096D271750A9C5(_thisAdjusted, method);
+	return _returnValue;
+}
+// System.Void UnityEngine.Rendering.StencilState::set_compareFunctionBack(UnityEngine.Rendering.CompareFunction)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StencilState_set_compareFunctionBack_m8AF73F4E8FC95A46D33E3192C50702D2AA15D61D (StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* __this, int32_t ___value0, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0 = ___value0;
+		__this->___m_CompareFunctionBack_8 = (uint8_t)((int32_t)(uint8_t)L_0);
+		return;
+	}
+}
+IL2CPP_EXTERN_C  void StencilState_set_compareFunctionBack_m8AF73F4E8FC95A46D33E3192C50702D2AA15D61D_AdjustorThunk (RuntimeObject* __this, int32_t ___value0, const RuntimeMethod* method)
+{
+	StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9*>(__this + _offset);
+	StencilState_set_compareFunctionBack_m8AF73F4E8FC95A46D33E3192C50702D2AA15D61D(_thisAdjusted, ___value0, method);
+}
+// UnityEngine.Rendering.StencilOp UnityEngine.Rendering.StencilState::get_passOperationBack()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t StencilState_get_passOperationBack_m3C6BAA44C73AE8FFC2C39BE1B3980498A28A6C38 (StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* __this, const RuntimeMethod* method) 
+{
+	int32_t V_0 = 0;
+	{
+		uint8_t L_0 = __this->___m_PassOperationBack_9;
+		V_0 = L_0;
+		goto IL_000a;
+	}
+
+IL_000a:
+	{
+		int32_t L_1 = V_0;
+		return L_1;
+	}
+}
+IL2CPP_EXTERN_C  int32_t StencilState_get_passOperationBack_m3C6BAA44C73AE8FFC2C39BE1B3980498A28A6C38_AdjustorThunk (RuntimeObject* __this, const RuntimeMethod* method)
+{
+	StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9*>(__this + _offset);
+	int32_t _returnValue;
+	_returnValue = StencilState_get_passOperationBack_m3C6BAA44C73AE8FFC2C39BE1B3980498A28A6C38(_thisAdjusted, method);
+	return _returnValue;
+}
+// System.Void UnityEngine.Rendering.StencilState::set_passOperationBack(UnityEngine.Rendering.StencilOp)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StencilState_set_passOperationBack_m4B1395FE21F5B5C809DC6F31D5824A90E05ED220 (StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* __this, int32_t ___value0, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0 = ___value0;
+		__this->___m_PassOperationBack_9 = (uint8_t)((int32_t)(uint8_t)L_0);
+		return;
+	}
+}
+IL2CPP_EXTERN_C  void StencilState_set_passOperationBack_m4B1395FE21F5B5C809DC6F31D5824A90E05ED220_AdjustorThunk (RuntimeObject* __this, int32_t ___value0, const RuntimeMethod* method)
+{
+	StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9*>(__this + _offset);
+	StencilState_set_passOperationBack_m4B1395FE21F5B5C809DC6F31D5824A90E05ED220(_thisAdjusted, ___value0, method);
+}
+// UnityEngine.Rendering.StencilOp UnityEngine.Rendering.StencilState::get_failOperationBack()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t StencilState_get_failOperationBack_m5310F3D9B99EA2D8E1DDDAC651EBF6E12A630BDE (StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* __this, const RuntimeMethod* method) 
+{
+	int32_t V_0 = 0;
+	{
+		uint8_t L_0 = __this->___m_FailOperationBack_10;
+		V_0 = L_0;
+		goto IL_000a;
+	}
+
+IL_000a:
+	{
+		int32_t L_1 = V_0;
+		return L_1;
+	}
+}
+IL2CPP_EXTERN_C  int32_t StencilState_get_failOperationBack_m5310F3D9B99EA2D8E1DDDAC651EBF6E12A630BDE_AdjustorThunk (RuntimeObject* __this, const RuntimeMethod* method)
+{
+	StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9*>(__this + _offset);
+	int32_t _returnValue;
+	_returnValue = StencilState_get_failOperationBack_m5310F3D9B99EA2D8E1DDDAC651EBF6E12A630BDE(_thisAdjusted, method);
+	return _returnValue;
+}
+// System.Void UnityEngine.Rendering.StencilState::set_failOperationBack(UnityEngine.Rendering.StencilOp)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StencilState_set_failOperationBack_mD279271DD1F99EE5B8BC19F5AE60988E6C6F0E4A (StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* __this, int32_t ___value0, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0 = ___value0;
+		__this->___m_FailOperationBack_10 = (uint8_t)((int32_t)(uint8_t)L_0);
+		return;
+	}
+}
+IL2CPP_EXTERN_C  void StencilState_set_failOperationBack_mD279271DD1F99EE5B8BC19F5AE60988E6C6F0E4A_AdjustorThunk (RuntimeObject* __this, int32_t ___value0, const RuntimeMethod* method)
+{
+	StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9*>(__this + _offset);
+	StencilState_set_failOperationBack_mD279271DD1F99EE5B8BC19F5AE60988E6C6F0E4A(_thisAdjusted, ___value0, method);
+}
+// UnityEngine.Rendering.StencilOp UnityEngine.Rendering.StencilState::get_zFailOperationBack()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t StencilState_get_zFailOperationBack_m4569E6652B75DE77E582DA00FD92291ECC1EBABC (StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* __this, const RuntimeMethod* method) 
+{
+	int32_t V_0 = 0;
+	{
+		uint8_t L_0 = __this->___m_ZFailOperationBack_11;
+		V_0 = L_0;
+		goto IL_000a;
+	}
+
+IL_000a:
+	{
+		int32_t L_1 = V_0;
+		return L_1;
+	}
+}
+IL2CPP_EXTERN_C  int32_t StencilState_get_zFailOperationBack_m4569E6652B75DE77E582DA00FD92291ECC1EBABC_AdjustorThunk (RuntimeObject* __this, const RuntimeMethod* method)
+{
+	StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9*>(__this + _offset);
+	int32_t _returnValue;
+	_returnValue = StencilState_get_zFailOperationBack_m4569E6652B75DE77E582DA00FD92291ECC1EBABC(_thisAdjusted, method);
+	return _returnValue;
+}
+// System.Void UnityEngine.Rendering.StencilState::set_zFailOperationBack(UnityEngine.Rendering.StencilOp)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StencilState_set_zFailOperationBack_mC092ABD8A5EA87245640A10E54C6A1990C4F6864 (StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* __this, int32_t ___value0, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0 = ___value0;
+		__this->___m_ZFailOperationBack_11 = (uint8_t)((int32_t)(uint8_t)L_0);
+		return;
+	}
+}
+IL2CPP_EXTERN_C  void StencilState_set_zFailOperationBack_mC092ABD8A5EA87245640A10E54C6A1990C4F6864_AdjustorThunk (RuntimeObject* __this, int32_t ___value0, const RuntimeMethod* method)
+{
+	StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9*>(__this + _offset);
+	StencilState_set_zFailOperationBack_mC092ABD8A5EA87245640A10E54C6A1990C4F6864(_thisAdjusted, ___value0, method);
+}
+// System.Boolean UnityEngine.Rendering.StencilState::Equals(UnityEngine.Rendering.StencilState)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool StencilState_Equals_m9FFB8A41D8838FD128875CB2D4DAA760C6DF1051 (StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* __this, StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9 ___other0, const RuntimeMethod* method) 
+{
+	bool V_0 = false;
+	int32_t G_B12_0 = 0;
+	{
+		uint8_t L_0 = __this->___m_Enabled_0;
+		StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9 L_1 = ___other0;
+		uint8_t L_2 = L_1.___m_Enabled_0;
+		if ((!(((uint32_t)L_0) == ((uint32_t)L_2))))
+		{
+			goto IL_00a3;
+		}
+	}
+	{
+		uint8_t L_3 = __this->___m_ReadMask_1;
+		StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9 L_4 = ___other0;
+		uint8_t L_5 = L_4.___m_ReadMask_1;
+		if ((!(((uint32_t)L_3) == ((uint32_t)L_5))))
+		{
+			goto IL_00a3;
+		}
+	}
+	{
+		uint8_t L_6 = __this->___m_WriteMask_2;
+		StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9 L_7 = ___other0;
+		uint8_t L_8 = L_7.___m_WriteMask_2;
+		if ((!(((uint32_t)L_6) == ((uint32_t)L_8))))
+		{
+			goto IL_00a3;
+		}
+	}
+	{
+		uint8_t L_9 = __this->___m_CompareFunctionFront_4;
+		StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9 L_10 = ___other0;
+		uint8_t L_11 = L_10.___m_CompareFunctionFront_4;
+		if ((!(((uint32_t)L_9) == ((uint32_t)L_11))))
+		{
+			goto IL_00a3;
+		}
+	}
+	{
+		uint8_t L_12 = __this->___m_PassOperationFront_5;
+		StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9 L_13 = ___other0;
+		uint8_t L_14 = L_13.___m_PassOperationFront_5;
+		if ((!(((uint32_t)L_12) == ((uint32_t)L_14))))
+		{
+			goto IL_00a3;
+		}
+	}
+	{
+		uint8_t L_15 = __this->___m_FailOperationFront_6;
+		StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9 L_16 = ___other0;
+		uint8_t L_17 = L_16.___m_FailOperationFront_6;
+		if ((!(((uint32_t)L_15) == ((uint32_t)L_17))))
+		{
+			goto IL_00a3;
+		}
+	}
+	{
+		uint8_t L_18 = __this->___m_ZFailOperationFront_7;
+		StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9 L_19 = ___other0;
+		uint8_t L_20 = L_19.___m_ZFailOperationFront_7;
+		if ((!(((uint32_t)L_18) == ((uint32_t)L_20))))
+		{
+			goto IL_00a3;
+		}
+	}
+	{
+		uint8_t L_21 = __this->___m_CompareFunctionBack_8;
+		StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9 L_22 = ___other0;
+		uint8_t L_23 = L_22.___m_CompareFunctionBack_8;
+		if ((!(((uint32_t)L_21) == ((uint32_t)L_23))))
+		{
+			goto IL_00a3;
+		}
+	}
+	{
+		uint8_t L_24 = __this->___m_PassOperationBack_9;
+		StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9 L_25 = ___other0;
+		uint8_t L_26 = L_25.___m_PassOperationBack_9;
+		if ((!(((uint32_t)L_24) == ((uint32_t)L_26))))
+		{
+			goto IL_00a3;
+		}
+	}
+	{
+		uint8_t L_27 = __this->___m_FailOperationBack_10;
+		StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9 L_28 = ___other0;
+		uint8_t L_29 = L_28.___m_FailOperationBack_10;
+		if ((!(((uint32_t)L_27) == ((uint32_t)L_29))))
+		{
+			goto IL_00a3;
+		}
+	}
+	{
+		uint8_t L_30 = __this->___m_ZFailOperationBack_11;
+		StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9 L_31 = ___other0;
+		uint8_t L_32 = L_31.___m_ZFailOperationBack_11;
+		G_B12_0 = ((((int32_t)L_30) == ((int32_t)L_32))? 1 : 0);
+		goto IL_00a4;
+	}
+
+IL_00a3:
+	{
+		G_B12_0 = 0;
+	}
+
+IL_00a4:
+	{
+		V_0 = (bool)G_B12_0;
+		goto IL_00a7;
+	}
+
+IL_00a7:
+	{
+		bool L_33 = V_0;
+		return L_33;
+	}
+}
+IL2CPP_EXTERN_C  bool StencilState_Equals_m9FFB8A41D8838FD128875CB2D4DAA760C6DF1051_AdjustorThunk (RuntimeObject* __this, StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9 ___other0, const RuntimeMethod* method)
+{
+	StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9*>(__this + _offset);
+	bool _returnValue;
+	_returnValue = StencilState_Equals_m9FFB8A41D8838FD128875CB2D4DAA760C6DF1051(_thisAdjusted, ___other0, method);
+	return _returnValue;
+}
+// System.Boolean UnityEngine.Rendering.StencilState::Equals(System.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool StencilState_Equals_mEA45A5D2BF2223B15EE0FB8BCEDBA9CB534ADF4B (StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* __this, RuntimeObject* ___obj0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	bool V_0 = false;
+	bool V_1 = false;
+	int32_t G_B5_0 = 0;
+	{
+		RuntimeObject* L_0 = ___obj0;
+		V_0 = (bool)((((RuntimeObject*)(RuntimeObject*)L_0) == ((RuntimeObject*)(RuntimeObject*)NULL))? 1 : 0);
+		bool L_1 = V_0;
+		if (!L_1)
+		{
+			goto IL_000d;
+		}
+	}
+	{
+		V_1 = (bool)0;
+		goto IL_0027;
+	}
+
+IL_000d:
+	{
+		RuntimeObject* L_2 = ___obj0;
+		if (!((RuntimeObject*)IsInstSealed((RuntimeObject*)L_2, StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9_il2cpp_TypeInfo_var)))
+		{
+			goto IL_0023;
+		}
+	}
+	{
+		RuntimeObject* L_3 = ___obj0;
+		bool L_4;
+		L_4 = StencilState_Equals_m9FFB8A41D8838FD128875CB2D4DAA760C6DF1051(__this, ((*(StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9*)((StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9*)(StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9*)UnBox(L_3, StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9_il2cpp_TypeInfo_var)))), NULL);
+		G_B5_0 = ((int32_t)(L_4));
+		goto IL_0024;
+	}
+
+IL_0023:
+	{
+		G_B5_0 = 0;
+	}
+
+IL_0024:
+	{
+		V_1 = (bool)G_B5_0;
+		goto IL_0027;
+	}
+
+IL_0027:
+	{
+		bool L_5 = V_1;
+		return L_5;
+	}
+}
+IL2CPP_EXTERN_C  bool StencilState_Equals_mEA45A5D2BF2223B15EE0FB8BCEDBA9CB534ADF4B_AdjustorThunk (RuntimeObject* __this, RuntimeObject* ___obj0, const RuntimeMethod* method)
+{
+	StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9*>(__this + _offset);
+	bool _returnValue;
+	_returnValue = StencilState_Equals_mEA45A5D2BF2223B15EE0FB8BCEDBA9CB534ADF4B(_thisAdjusted, ___obj0, method);
+	return _returnValue;
+}
+// System.Int32 UnityEngine.Rendering.StencilState::GetHashCode()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t StencilState_GetHashCode_mB4A02DEE780377C853D16FFF49CCB9D9F4F711A5 (StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* __this, const RuntimeMethod* method) 
+{
+	int32_t V_0 = 0;
+	int32_t V_1 = 0;
+	{
+		uint8_t* L_0 = (&__this->___m_Enabled_0);
+		int32_t L_1;
+		L_1 = Byte_GetHashCode_mB42A844E310593D124CE92EBA90F3755C9B10678(L_0, NULL);
+		V_0 = L_1;
+		int32_t L_2 = V_0;
+		uint8_t* L_3 = (&__this->___m_ReadMask_1);
+		int32_t L_4;
+		L_4 = Byte_GetHashCode_mB42A844E310593D124CE92EBA90F3755C9B10678(L_3, NULL);
+		V_0 = ((int32_t)(((int32_t)il2cpp_codegen_multiply(L_2, ((int32_t)397)))^L_4));
+		int32_t L_5 = V_0;
+		uint8_t* L_6 = (&__this->___m_WriteMask_2);
+		int32_t L_7;
+		L_7 = Byte_GetHashCode_mB42A844E310593D124CE92EBA90F3755C9B10678(L_6, NULL);
+		V_0 = ((int32_t)(((int32_t)il2cpp_codegen_multiply(L_5, ((int32_t)397)))^L_7));
+		int32_t L_8 = V_0;
+		uint8_t* L_9 = (&__this->___m_CompareFunctionFront_4);
+		int32_t L_10;
+		L_10 = Byte_GetHashCode_mB42A844E310593D124CE92EBA90F3755C9B10678(L_9, NULL);
+		V_0 = ((int32_t)(((int32_t)il2cpp_codegen_multiply(L_8, ((int32_t)397)))^L_10));
+		int32_t L_11 = V_0;
+		uint8_t* L_12 = (&__this->___m_PassOperationFront_5);
+		int32_t L_13;
+		L_13 = Byte_GetHashCode_mB42A844E310593D124CE92EBA90F3755C9B10678(L_12, NULL);
+		V_0 = ((int32_t)(((int32_t)il2cpp_codegen_multiply(L_11, ((int32_t)397)))^L_13));
+		int32_t L_14 = V_0;
+		uint8_t* L_15 = (&__this->___m_FailOperationFront_6);
+		int32_t L_16;
+		L_16 = Byte_GetHashCode_mB42A844E310593D124CE92EBA90F3755C9B10678(L_15, NULL);
+		V_0 = ((int32_t)(((int32_t)il2cpp_codegen_multiply(L_14, ((int32_t)397)))^L_16));
+		int32_t L_17 = V_0;
+		uint8_t* L_18 = (&__this->___m_ZFailOperationFront_7);
+		int32_t L_19;
+		L_19 = Byte_GetHashCode_mB42A844E310593D124CE92EBA90F3755C9B10678(L_18, NULL);
+		V_0 = ((int32_t)(((int32_t)il2cpp_codegen_multiply(L_17, ((int32_t)397)))^L_19));
+		int32_t L_20 = V_0;
+		uint8_t* L_21 = (&__this->___m_CompareFunctionBack_8);
+		int32_t L_22;
+		L_22 = Byte_GetHashCode_mB42A844E310593D124CE92EBA90F3755C9B10678(L_21, NULL);
+		V_0 = ((int32_t)(((int32_t)il2cpp_codegen_multiply(L_20, ((int32_t)397)))^L_22));
+		int32_t L_23 = V_0;
+		uint8_t* L_24 = (&__this->___m_PassOperationBack_9);
+		int32_t L_25;
+		L_25 = Byte_GetHashCode_mB42A844E310593D124CE92EBA90F3755C9B10678(L_24, NULL);
+		V_0 = ((int32_t)(((int32_t)il2cpp_codegen_multiply(L_23, ((int32_t)397)))^L_25));
+		int32_t L_26 = V_0;
+		uint8_t* L_27 = (&__this->___m_FailOperationBack_10);
+		int32_t L_28;
+		L_28 = Byte_GetHashCode_mB42A844E310593D124CE92EBA90F3755C9B10678(L_27, NULL);
+		V_0 = ((int32_t)(((int32_t)il2cpp_codegen_multiply(L_26, ((int32_t)397)))^L_28));
+		int32_t L_29 = V_0;
+		uint8_t* L_30 = (&__this->___m_ZFailOperationBack_11);
+		int32_t L_31;
+		L_31 = Byte_GetHashCode_mB42A844E310593D124CE92EBA90F3755C9B10678(L_30, NULL);
+		V_0 = ((int32_t)(((int32_t)il2cpp_codegen_multiply(L_29, ((int32_t)397)))^L_31));
+		int32_t L_32 = V_0;
+		V_1 = L_32;
+		goto IL_00da;
+	}
+
+IL_00da:
+	{
+		int32_t L_33 = V_1;
+		return L_33;
+	}
+}
+IL2CPP_EXTERN_C  int32_t StencilState_GetHashCode_mB4A02DEE780377C853D16FFF49CCB9D9F4F711A5_AdjustorThunk (RuntimeObject* __this, const RuntimeMethod* method)
+{
+	StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<StencilState_tBE5F7C1134E50C5E93B45A626D4FB4690F1C91A9*>(__this + _offset);
+	int32_t _returnValue;
+	_returnValue = StencilState_GetHashCode_mB4A02DEE780377C853D16FFF49CCB9D9F4F711A5(_thisAdjusted, method);
+	return _returnValue;
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"

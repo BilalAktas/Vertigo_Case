@@ -21,6 +21,8 @@ public class GameManager : Singleton<GameManager>
 
     private void Start()
     {
+        //Application.targetFrameRate = 60;
+        
         Invoke(nameof(ActiveSpinButton), SpinButtonActiveDelay);
     }
 
